@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "risk-adjustment-model-webapp"
+version = "0.1.0"
+description = "Streamlit webapp to provide GUI to run risk_adjustment_model Python library."
+authors = ["Phil Fehlinger <pjfehlinger@gmail.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+risk_adjustment_model = "^0.1.1"
+streamlit = "^1.33.0"
+pandas = "^2.2.0"
+plotly = "^5.20.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.1.1"
+pre-commit = "^3.7.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
